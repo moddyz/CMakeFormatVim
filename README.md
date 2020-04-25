@@ -16,12 +16,17 @@ Clone this repository, and copy [cmake_format.vim](cmake_format.vim) into the vi
 ```bash
 git clone git@github.com:moddyz/CMakeFormatVim.git
 cd CMakeFormatVim
-cp cmake_format.vim ~/.vim/plugin/
+mkdir -p ~/.vim/plugin/ && cp cmake_format.vim ~/.vim/plugin/
 ```
 
 ### Hotkey binding
 
 It is useful to bind a hotkey to execute the formatter.
+
+In your `~/.vimrc`, file type plugin detection needs to be on:
+```vim
+filetype plugin on
+```
 
 For example, the following can be added to `.vimrc` to bind the key **F8** to trigger formatting:
 ```vim
