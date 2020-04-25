@@ -24,7 +24,7 @@ cp cmake_format.vim ~/.vim/plugin/
 It is useful to bind a hotkey to execute the formatter.
 
 For example, the following can be added to `.vimrc` to bind the key **F8** to trigger formatting:
-```vimscript
+```vim
 " Run cmake-format on the current buffer.
 autocmd FileType cmake nnoremap <buffer><F8> :<C-u>CMakeFormat<CR>
 autocmd FileType cmake vnoremap <buffer><F8> :CMakeFormat<CR>
