@@ -16,7 +16,8 @@ Clone this repository, and copy [cmake_format.vim](cmake_format.vim) into the vi
 ```bash
 git clone git@github.com:moddyz/CMakeFormatVim.git
 cd CMakeFormatVim
-mkdir -p ~/.vim/plugin/ && cp cmake_format.vim ~/.vim/plugin/
+mkdir -p ~/.vim/plugin/
+cp cmake_format.vim ~/.vim/plugin/
 ```
 
 ### Hotkey binding
