@@ -13,7 +13,7 @@ The `cmake-format` executable needs to be available in the shell environment of 
 ### Install the vim plugin
 
 Clone this repository, and copy [cmake_format.vim](cmake_format.vim) into the vim plugin discovery location:
-```
+```bash
 git clone git@github.com:moddyz/CMakeFormatVim.git
 cd CMakeFormatVim
 cp cmake_format.vim ~/.vim/plugin/
