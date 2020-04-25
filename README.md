@@ -19,7 +19,7 @@ cd CMakeFormatVim
 cp cmake_format.vim ~/.vim/plugin/
 ```
 
-### Hotkey Binding
+### Hotkey binding
 
 It is useful to bind a hotkey to execute the formatter.
 
