@@ -2,9 +2,9 @@
 
 Vim plugin for the [cmake-format](https://github.com/cheshirekow/cmake_format) tool.
 
-## How to install the plugin
+## Installation
 
-### Install the cmake-format tool
+### Install cmake-format 
 
 The `cmake-format` tool is required - see https://github.com/cheshirekow/cmake_format for installation details.
 
