@@ -20,6 +20,8 @@ mkdir -p ~/.vim/plugin/
 cp cmake_format.vim ~/.vim/plugin/
 ```
 
+## Options
+
 ### Hotkey binding
 
 It is useful to bind a hotkey to execute the formatter.
@@ -34,6 +36,17 @@ For example, the following can be added to `.vimrc` to bind the key **F8** to tr
 " Run cmake-format on the current buffer.
 autocmd FileType cmake nnoremap <buffer><F8> :<C-u>CMakeFormat<CR>
 autocmd FileType cmake vnoremap <buffer><F8> :CMakeFormat<CR>
+```
+
+### Additional arguments
+
+Additional arguments can be set on the `g:cmake_format_args` global variable, to change cmake formatting behavior.  
+
+These additional arguments are passed directly as command line arguments to the `cmake-format` executable.
+
+For example, the following can be set in `.vimrc` to layout cmake directive subgroups and arguments vertically:
+```
+let g:cmake_format_args = "--max-subgroups-hwrap 0 --max-pargs-hwrap 0"
 ```
 
 ## Planned work
