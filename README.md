@@ -1,12 +1,12 @@
 # CMakeFormatVim
 
-Vim plugin for the [cmake-format](https://github.com/cheshirekow/cmake_format) tool.
+Vim plugin for auto-formatting CMake files.
 
 ## Installation
 
 ### Install cmake-format 
 
-The `cmake-format` tool is required - see https://github.com/cheshirekow/cmake_format for installation details.
+The **cmake-format** tool is required - see https://github.com/cheshirekow/cmake_format for installation details.
 
 The `cmake-format` executable needs to be available in the shell environment of the vim process.
 
