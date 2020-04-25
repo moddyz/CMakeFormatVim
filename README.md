@@ -2,28 +2,30 @@
 
 Vim plugin for the [cmake-format](https://github.com/cheshirekow/cmake_format) tool.
 
-## How to use
+## How to install the plugin
 
-### Install cmake-format
+### Install the cmake-format tool
 
-`cmake-format` is required - see https://github.com/cheshirekow/cmake_format for installation details.
+The `cmake-format` tool is required - see https://github.com/cheshirekow/cmake_format for installation details.
 
 The `cmake-format` executable needs to be available in the shell environment of the vim process.
 
-### Install the plugin
+### Install the vim plugin
 
-Copy [cmake_format.vim](cmake_format.vim) into the vim plugin location:
+Clone this repository, and copy [cmake_format.vim](cmake_format.vim) into the vim plugin discovery location:
 ```
+git clone git@github.com:moddyz/CMakeFormatVim.git
+cd CMakeFormatVim
 cp cmake_format.vim ~/.vim/plugin/
 ```
 
-### Bind a hotkey for executing the formatter
+### Bind a hotkey to execute the formatter
 
-It is useful to bind a hotkey to invoke the formatting command.
+It is useful to bind a hotkey to execute the formatter.
 
 For example, the following can be added to `.vimrc` to bind the key **F8** to trigger formatting:
 ```vimscript
-" Run cmake-format to format the current buffer.
+" Run cmake-format on the current buffer.
 autocmd FileType cmake nnoremap <buffer><F8> :<C-u>CMakeFormat<CR>
 autocmd FileType cmake vnoremap <buffer><F8> :CMakeFormat<CR>
 ```
